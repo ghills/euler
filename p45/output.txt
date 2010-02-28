@@ -1,0 +1,6 @@
+Project Euler -- Problem 45
+Find next number after 40755 that is triangle, pentagonal, and hexagonal
+
+
+Solution: 1533776805
+nt: 55385	np: 31977	nh: 27693
