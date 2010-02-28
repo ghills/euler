@@ -1,0 +1,6 @@
+Project Euler -- Problem #55
+Find all Lychrel numbers less than 10000
+A number that added to itself reversed does not form a palindrome (in 50 iterations
+
+
+Total: 249
