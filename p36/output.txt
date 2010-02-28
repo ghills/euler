@@ -1,0 +1,6 @@
+Project Euler -- Problem #36
+Sum of all numbers less than one million that are palindromic in base 2 and 10
+Calculating........
+
+
+Total: 872187
