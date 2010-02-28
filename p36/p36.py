@@ -19,8 +19,10 @@ print "Project Euler -- Problem #36"
 print "Sum of all numbers less than one million that are palindromic in base 2 and 10"
 
 print "Calculating........\n\n"
+
+#we only need to check odd numbers otherwise the last binary digit would be 0
 while i <= 1000000:
 	if check_pal(str(i)) and check_pal(int2bin(i)): sum += i
-	i += 1
+	i += 2
 
 print "Total: %s" % sum
