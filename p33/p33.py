@@ -27,6 +27,8 @@ def is_curious(frac):
 		n = frac[0] / 10
 		d = frac[1] / 10
 
+	if (d == 0): return False
+
 	return float(frac[0]) / frac[1] == float(n) / d
 
 
