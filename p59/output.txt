@@ -1,0 +1,23 @@
+Project Euler -- Problem 59
+Brute force attempt to break an xor cipher
+
+
+
+Building list of words from dictionary...
+Dictionary built.
+
+words found: the -- gospel -- of -- john -- chapter -- in
+key added god
+words found: y -- v -- r -- eva -- k -- yb
+key added tbq
+words found: y -- t -- r -- eta -- k -- b
+key added vbq
+words found: wet -- j -- p -- to -- e -- le
+key added vli
+words found: k -- t -- r -- lets -- y -- p
+key added vpq
+Project Euler -- Problem 59
+Decrypt the file and print out the ascii total
+
+
+Sum: 107359
