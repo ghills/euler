@@ -1,0 +1,6 @@
+Project Euler -- Problem 33
+Fractions with the curious cancellation property
+
+
+Found 4 answers
+[[16, 64], [26, 65], [19, 95], [49, 98]]
