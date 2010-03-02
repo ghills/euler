@@ -35,6 +35,6 @@ n = 10
 
 while num_divisors(n*(n+1)/2) < 500: n += 1
 
-print "Solution: %d" % n
+print "Solution: %d" % (n*(n+1)/2)
 
 

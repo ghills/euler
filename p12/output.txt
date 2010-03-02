@@ -1,0 +1,5 @@
+Project Euler -- Problem 12
+First triangle number with  over 500 divisors
+
+
+Solution: 76576500
