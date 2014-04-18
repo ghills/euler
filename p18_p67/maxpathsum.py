@@ -16,6 +16,7 @@ def DumbPathSum(triangle, row, idx):
                      DumbPathSum(triangle, row + 1, idx + 1) )
 
 class Node(object):
+    __slots__ = ['value', 'leftbest', 'rightbest']
     def __init__(self, value, leftbest=0, rightbest=0):
         self.value = value
         self.leftbest = leftbest
@@ -37,6 +38,5 @@ def MaxPathSum(triangle):
 filename = sys.argv[1]
 
 triangle_data = [ [int(x) for x in l.strip().split(' ')] for l in open(filename, 'r') ]
-print 'rows: ', len(triangle_data)
-print 'max path sum: ', MaxPathSum(triangle_data)
+print MaxPathSum(triangle_data)
 
