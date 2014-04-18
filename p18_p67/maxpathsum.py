@@ -16,24 +16,18 @@ def DumbPathSum(triangle, row, idx):
                      DumbPathSum(triangle, row + 1, idx + 1) )
 
 class Node(object):
-    __slots__ = ['value', 'leftbest', 'rightbest']
-    def __init__(self, value, leftbest=0, rightbest=0):
+    __slots__ = ['value', 'maxpath']
+    def __init__(self, value, maxpath):
         self.value = value
-        self.leftbest = leftbest
-        self.rightbest = rightbest
+        self.maxpath = maxpath
 
 def MaxPathSum(triangle):
-    triangle = [[Node(value=x) for x in row] for row in triangle]
+    triangle = [[Node(value=x, maxpath=x) for x in row] for row in triangle]
     triangle.reverse()
-    for row, nextrow in izip(triangle, triangle[1:]):
+    for row, prevrow in izip(triangle[1:], triangle):
         for i, node in enumerate(row):
-            best_to_here = max(node.leftbest, node.rightbest)
-            if i > 0:
-                nextrow[i - 1].rightbest = node.value + best_to_here
-            if i < len(row) - 1:
-                nextrow[i].leftbest = node.value + best_to_here
-    top_node = triangle[-1][0]
-    return top_node.value + max(top_node.leftbest, top_node.rightbest)
+            node.maxpath = node.value + max(prevrow[i].maxpath, prevrow[i+1].maxpath)
+    return triangle[-1][0].maxpath
 
 filename = sys.argv[1]
 
