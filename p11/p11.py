@@ -1,7 +1,5 @@
 #!/usr/bin/python
 
-print "Project Euler -- Problem 11"
-
 f = open("grid.txt","r")
 
 nums = [ [int(n.rstrip()) for n in s.split(" ")] for s in f.readlines() ]
